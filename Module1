@@ -1,0 +1,33 @@
+$Why do we need IPV6 addressing?	IPv4 address depletion, there is few IPv4 addressing. IPv4 has a lack of end to end connectivity. IPv4 has survived this long with private addressing and NAT. Thus ending direct communications with public addressing. IPv4 was simple and does not help with complex networks. NAT caused latency and troubleshooting issues.
+$What are the benefits of IPv6?	Has a 128-bit address space, the development of IPv6 also included fixes for IPv4 limitations. 
+$How many connections are there in IPv4?	There are 1 billion
+$How many connections are there in IPv6?	There are 1 undecillion 10^36
+$IPv6 was developed by?	IETF Engineering Task Force
+$The improvements of IPv6?	Increased address space over a 128 bit address, improved packet handing with fewer fields, eliminates the need for NAT.
+$Dual Stack?	The devices run both IPv4 and 6 protocols simultaneously
+$Tunneling?	A method of transporting an IPv6 packet over an IPv4 network
+$Translation?	Network Address Translation 64 allows IPv6 device to communicate with an IPv4 device using a technique similar to NAT. IPv6 packet is translated to an IPv4 packet and vice versa through translation.
+$IPv6 addresses are 128 bits written in?	Hexadecimal
+$IPv6 are not case sensitive?	True
+$Format of IPv6?	X:X:X:X:X:X:X:X with each X consisting of four hex values
+$IPv6 hextet?	The unofficial term used to refer to a segment of 16 bits or four hexadecimal values.
+$IPv6 Rule 1?	Omit the leading 0s
+$IPv6 Double Colon?	Can replace any single contiguou string of one or more 16 bit hextets
+$IPV4 vs IPv6 header?	IPv6 has a fixed 40 Bytes
+$IPv6 removed fields to improve performance?	Flag, fragment Offset, and header checksum
+$IPv6 Packet header Version?	This will be for v6  as opposed to v4, a 4 bit field = 0110
+$IPv6 Packet header Traffic  Class?	Used for QoS, Equivalent to DiffServ - DS field
+$IPv6 Packet header Flow label?	Informs device to handle identical flow labels the same way, 20 bit field
+$IPv6 Packet header payload length?	This 16 bit field indicates the length of the data portion or payload of the IPv6 packet
+$IPv6 Packet header  Next Header?	I.D.s next level protocol: ICMP, TCP, UDP, ETC
+$IPv6 Packet header  Hop Limit?	Replaces TTL field Layer 3 hop count
+$IPv6 Packet header  Source IPv4 address?	128 bit source address
+$IPv6 Packet header  Destination IPv4 address?	128 bit destination address
+$IPv6 Packet header flow label field?	A 20 bit field suggests that all packets with the same flow label receive the same type of handling by routers.
+$IPv6 Packet header payload?	IPv6 payload length field is similar to the total length field in the IPv4 header, except for one important difference: IPv4's total length field includes both IPv4 header and the data the total length of the IPv4 packet. The IPv6 Payload length Field is 40 bytes.
+$IPv6 Packet header Does not do fragmentation?	Unless it is the source of the packet. Routers do not do fragmentation. 
+$MTU?	Maximum transmission Unit
+$When an IPv6 router receives a packet larger than the MTU?	Egress interface drops the packet amd sends ICMPv6 Packet too big message.
+$IPv6 anycast?	This is any IPv6 unicast that can be assigned to multiple devices. A pack is sent to an anycast address is routed to the nearest device ahcing that address.
+$IPv6 broadcast?	There is no IPv6 broadcast
+$?
