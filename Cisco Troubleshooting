@@ -1,0 +1,27 @@
+Basic diagnostics
+  show version
+  show ip interface brief | exclude ass
+  show interface description
+  show interface <inter>
+  show logging 
+  show clock
+  show environment all
+  show run | [include | ebgin] <keyword>
+  
+First hop redundancy
+  show standby [brief]
+  show vrrp [brief]
+  show glbp [brief]
+  show track [brief]
+  
+Spanning Tree
+  show spanning-tree [summary | detail | root]
+  show spanning-tree [interface | vlan]
+  show spanning-tree mst [...]
+  
+802.1x
+  show dot1x [statistics] [interface <interface>]
+  dot1x test eapol-capable [interface <interface>]
+  dot1x re-authenticate interface <interface>
+  
+  
