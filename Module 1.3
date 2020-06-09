@@ -1,0 +1,26 @@
+$ICMPv6 message contains? Type, Code, Checksum, message body in 32 bits
+$ICMPv6 Field Type? 8 bits, messages such as echo request, destination unreachable or packet too big
+$ICMPv6 Field Code? 8 bits and expands on the type field 
+$ICMPv6 Field Checksum? 16 bits used to detect data corruption in the ICMPv6 message and parts of the ipv6 header
+$ICMPv6 Field type-two classes? error messages 0 - 127, 128 - 255 informational
+$Destination unreachable? Type 1
+$Packet too Big? Type 2
+$Time Exceeded? Type 3 Hop Limit field drops by one, then drops if it hits 0
+$Parameter Problem? Type 4 Finds a problem in the IPv6 header and must discard it
+$?What does Neighbor Discovery provide? Address resolution, Router discovery, Redirection services
+$Router Solicitation RS?  Router Solicitation message is sent out the FF02::2 All router's multicast when it needs to know how to dynamically obtain its address
+$Router Advertisement RA?  Router advertisement message is sent out the FF02::1 All ipv6 enabled devices multicast when it needs to know how to dynamically obtain its address
+$Can a routerbe configured to send an RA? Yes
+$Cirsco router sends RA every...? 200 seconds
+$Neighbor Solicitation (NS)? PCs can receive the message and sends out an NA to the router all of which adding information on to its own neighbor cache
+$How does RS and RA work? Hosts use RS and RA messages to actively search for a server to giver information to automaticcaly assign its network prefix, gateway and other configuration.
+$What is SLaac? Stateless Address Autoconfiguration allows RS and RA to work to give a host network prefix, default gateway and other confurations
+$How does stateful work? It's limited to only provideing gaeway information to the hosts.
+$How does address resolution? Neighbor solicitation and neighbor advertisement help a device know on the ethernet side of things know of other devices when it knows its ipv6 address
+$DAD? Duplicate Address Detection checks by using NS and Na to see if any devices are already using a dynamically configured unicast in the network
+$NUD? Neighbor unreachability detection Checks wtih NS and NA to getermine whether a neighbor is reachable from the perspective of the device
+$Redirection? Works as a way to send packets to a better first hop or next hop router.
+$A host RS on destination address? FF02:2
+$A Router RA's on a hosts request by having the Destination Ipv6 address as: ff02::1
+$The cycle of a obtaining an address? Host RS>Router Router>Neighbor caches NeighborCache> empty Router>NS NS>PC PC>UpdatesCache PC>NA NA>Router Routerupdatescache
+
