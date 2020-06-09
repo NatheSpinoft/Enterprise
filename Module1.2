@@ -1,0 +1,28 @@
+$What is a Unicast? Identifies an interface on an ipv6 enablerd device
+$Multicast? is used to send a single ipv6 packet to multiple destinations
+$Anycast? TCan be assigned to multiple drvices and a packet sent to one of these devices that happens to be the nearest receives it.
+$IPv6 Broadcast? Does not have a broadcast address, but an all-nodes multicast gives the same result
+$IPV6 Addresses? Unicast, Multicast, anycast
+$Multicast versions? Assigned, solicited node
+$Address for assigned multicast? FF00::/8
+$Address for solicited-node? FF:02::1:FF00:0000/104
+$Address for Global unicast? 2000::/3 | 3FFF::/3
+$Address for link-local? FE80::/10 | FEBF::/10
+$Address for loopback? ::1/128
+$Address for unspecified? ::/128
+$Address for unique local? FC00::/7 FDFF::/7
+$Address for embedded IPv4? ::/80
+$SLAAC uses this amount as bits for autoconfiguration? 64 bits
+$Why is GUA needed? Global Unicast Addresses are similar for public IPv4 address which are routable
+$Why is LLA needed? Link local Addresses are required for every IPv6 enabled device and used to communicate with other devices on the same local link. Not routable
+$What is so unique about unique local addresses? (RFC 1918) They are used for a local network, not routable as the addresses are used to secure the network from security risks
+$A Hex digit contains? 16 bits
+$4 Hex digits are called? Hextets
+$The first three bits of a GUA address? are being assigned
+$What is a global routing prefix? Its assigned by the ISP to a customer
+$IPv6 LLA? Enables a device to communicate with other IPv6 enabled devices on the same link and subnet, eveery network interface with IPPv6 must have LLA.
+$If an LLA is not configured? If not configured manually the device automatically creates one
+$FE80::/10?LLA
+$This type of address can be assigned to more than one interface on switches or/and routers but is routed to the nearest one? Anycast
+
+
